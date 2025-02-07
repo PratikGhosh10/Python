@@ -1,1 +1,18 @@
-The aim of this project is to use time series analysis techniques to forecast sales and revenue in Python. By processing historical sales data, doing exploratory data analysis and applying the ARIMA model to predict future sales trends, It saves us huge efforts of choosing the best model to predict future sales trends of any business. There are also interactive visualization such as monthly sales trends, revenue comparisons by category, heat map, etc. First, data needs to be preprocessed, then features need to be engineered, then autocorrelation analysis must be performed and finally ME and RMSE needs to be assessed to select a model. The final model helps businesses determine demand and how to best operate inventory. That is, future improvements can be SARIMA, XGBoost or LSTMs for greater accuracy. Inside, it offers indications to making decisions with data.
+1️ Data Preprocessing
+	Converts Order_Date into a proper datetime format
+	Aggregates monthly sales data for trend analysis
+	Splits the dataset into training (80%) and testing (20%)
+
+2️ Interactive Visualizations
+	Monthly Sales Trends (Interactive Plotly Line Chart)
+	Sales Distribution (Histogram + KDE for understanding revenue spread)
+	Monthly Sales Heatmap (Seasonal trend detection)
+	Sales by Category & Sub-Category (Revenue comparison)
+	Geographic Sales Analysis (Choropleth map for sales by state)
+
+3️ Time Series Analysis & Forecasting
+	ACF & PACF Plots (To analyze autocorrelations in sales data)
+	Auto ARIMA Order Selection (Using pmdarima)
+	ARIMA Model for Forecasting (Trained on historical data)
+	Interactive Forecast Plot (Actual vs Predicted sales)
+	Model Evaluation (Mean Absolute Error & RMSE Calculation)
